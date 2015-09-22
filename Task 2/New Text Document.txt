@@ -1,0 +1,9 @@
+!DOCTYPE
+<html>
+<head>
+<title>My Image Gallery</title>
+</head>
+<body>
+<div width ="70%" bg-color="Blue">
+</body>
+</html>
