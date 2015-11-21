@@ -1,0 +1,63 @@
+.topnav {
+    font-size: 16px;
+    border-bottom: 1px outset rgba(192, 192, 192, 0.5);
+    background: rgba(240, 255, 255, 0.9);
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    margin-top: 100px;
+} 
+
+#icon, #temp{
+  display: inline-block;
+}
+
+img{
+  vertical-align: middle;
+}
+
+#icon{
+  position: relative;
+  bottom: 5px;
+}
+
+#temp{
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-bottom: 1%;
+  color: #ffffff;
+  text-shadow: 0 0 0.2em #333;
+}
+
+.location, #conditions, #wind{
+  display: inline-block;
+}
+
+.details{
+  border: 2px solid #ffffff;
+  color: #7F3320;
+  padding: 2% 1% 2% 1%;
+  margin: 0 auto 0.7% auto; 
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  box-shadow: .2em .2em .2em #444;
+  opacity: 0.7;
+}
+
+#postal {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 3%;
+  color: #ffffff;
+  text-shadow: 0 0 0.2em #333;
+}
+
+button{
+  margin-top: 3%;
+  font-size: 1.15em;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.2em;
+  background-color: #7F3320;
+  color: #ffffff;
+  padding: 0.5%;
+}

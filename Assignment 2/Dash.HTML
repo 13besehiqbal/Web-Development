@@ -1,0 +1,80 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/teet.css">
+<link rel="stylesheet" type="text/css" href="css/weather.css">
+<link rel="stylesheet" type="text/css" href="css/clock.css" />
+<title>DashBoard</title>
+<style>
+body{
+background-image: url("images/bg.JPEG");
+}
+</style>
+</head>
+<body>
+<div id = "header">DASHBOARD<hr></div>
+<div id = "board">
+<a href = "#cc" ><img  id = "cd" class = "obj" src = "images/clock.PNG" ></a>
+<a href = "#weatherFore"><img id = "wF" class = "obj" src = "images/weather.PNG"></a>
+<a href = "#cal"><img id = "ca" class = "obj" src = "images/cal.PNG"></a>
+</div>
+<div class = "new">
+	<div id = "cc">
+		<table id='container'>
+      <tr>
+        <td>
+          <svg id='clock' viewBox='0 0 100 100' width='300' height='300'>
+            <circle id='surface' cx='50' cy='50' r='45'/>
+            <g id='pointers'>
+              <line id='h_pointer' x1='50' y1='50' x2='50' y2='27' />
+              <line id='m_pointer' x1='50' y1='50' x2='50' y2='17' />
+              <line id='s_pointer' x1='50' y1='50' x2='50' y2='13' />
+            </g>
+            <g id='numbers'>
+              <text x='43' y='18'>12</text>
+              <text x='85' y='54'>3</text>
+              <text x='47' y='91'>6</text>
+              <text x='9' y='54'>9</text>
+            </g>
+          </svg>
+        </td>
+      </tr>
+    </table>
+		<script type="text/javascript" src="js/clock.js"></script>
+		<script type="text/javascript">timerTick();</script>
+		<center><a href = "#board"><button class ="aBtn">Home</button></a> </center>
+	</div>  
+	<div id = "weatherFore" style = "background-image: url('images/weather.jpg');">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<div class='container'>
+  <h1 class = "text-center"><center> Weather</center> </h1> 
+<div id="iconTemp">
+ <div id="icon"></div>
+ <div id="temp"></div>
+</div>  
+
+<div id="weatherWrapper">
+ <div class="location details"></div>
+ <div id="conditions" class="details"></div>
+ <div id="wind" class="details"></div>
+  <div id="postal"></div>
+</div> 
+
+		<script type="text/javascript" src="js/weather.js"></script>
+		<a href = "#board"><button class ="aBtn">Home</button></a>
+	</div>	</div>
+	<div id = "cal">
+	<div id = "yao">
+		<script type="text/javascript" src="js/Caalender.js"></script>
+		<script type="text/javascript">calendar();</script>
+	</div>
+		<center><a href = "#board"><button class ="aBtn">Home</button></a></center>
+	</div>
+</div>
+<div id = "footer">
+By Hamza Iqbal
+</div>
+<center><a href = "#board">Start</a></center>
+</body>
+</html>
